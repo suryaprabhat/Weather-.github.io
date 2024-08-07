@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <img id="weather-icon" alt="Weather Icon"/>
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <h2 class="temperature-degree">34</h2>
+            <span class="unit">F</span>
+            <select id="unit-select">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+            </select>
+        </div>
+        <div class="temperature-description">It's friggin cold</div>
+    </div>
+    <div class="wind-speed">
+        <h2 class="wind-speed-value">10</h2>
+        <span class="wind-unit">mph</span>
+        <select id="wind-unit-select">
+            <option value="mph">Miles per hour</option>
+            <option value="kph">Kilometers per hour</option>
+        </select>
+    </div>
+    <div class="pressure">
+        <h2 class="pressure-value">1013</h2>
+        <span class="pressure-unit">mb</span>
+        <select id="pressure-unit-select">
+            <option value="mb">Millibars</option>
+            <option value="inhg">Inches of Mercury</option>
+        </select>
+    </div>
+    <h2 class="last-updated">Recently updated</h2>
+    <script src="app.js"></script>
+</body>
+</html>
